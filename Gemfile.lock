@@ -1,3 +1,21 @@
+PATH
+  remote: ../bouquet/core
+  specs:
+    bouquet-core (0.1.0)
+      rails (>= 5.0.0.beta1, < 5.1)
+
+PATH
+  remote: ../bouquet/gate
+  specs:
+    bouquet-gate (0.1.0)
+      rails (>= 5.0.0.beta1, < 5.1)
+
+PATH
+  remote: ../bouquet/store
+  specs:
+    bouquet-store (0.1.0)
+      rails (>= 5.0.0.beta1, < 5.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -172,6 +190,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bouquet-core!
+  bouquet-gate!
+  bouquet-store!
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)

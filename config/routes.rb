@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  mount Bouquet::Gate::Engine => "/api"
+  mount Bouquet::Store::Engine => "/store"
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
