@@ -1,0 +1,63 @@
+/' object list '/
+
+' 製品（花束）
+object product
+' 材料（花）
+object material
+' 製品の組立
+object assembly
+
+' 得意先
+object customer
+' 受注
+object sales_order
+' 出荷
+object shipment
+' 出庫
+object delivery
+
+' 仕入先
+object supplier
+' 発注
+object purchase_order
+' 入荷
+object arrival
+' 入庫
+object stock
+
+' 場所
+object location
+' 保管
+object storage
+' 取出
+object retrieval
+
+/' object relation '/
+
+customer . product
+customer .. sales_order
+sales_order .. product
+
+product . material
+product .. assembly
+assembly .. material
+
+material . supplier
+material .. purchase_order
+purchase_order .. supplier
+
+sales_order .. shipment
+shipment . location
+shipment .. delivery
+delivery .. location
+
+purchase_order .. arrival
+location . arrival
+stock .. arrival
+location .. stock
+
+delivery .. retrieval
+stock .. storage
+
+retrieval .. storage
+
