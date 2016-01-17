@@ -1,4 +1,4 @@
-# This migration comes from bouquet (originally 20160108155820)
+# This migration comes from bouquet (originally 20160111072002)
 class CreateBouquetStorages < ActiveRecord::Migration[5.0]
   def change
     create_table :bouquet_storages do |t|
@@ -6,7 +6,6 @@ class CreateBouquetStorages < ActiveRecord::Migration[5.0]
       t.date :date
       t.integer :quantity
       t.references :stock, index: true, foreign_key: true
-      t.references :delivery, index: true, foreign_key: true
 
       t.timestamps
     end
