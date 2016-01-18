@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160117060852) do
+ActiveRecord::Schema.define(version: 20160118133156) do
 
   create_table "bouquet_arrivals", force: :cascade do |t|
     t.string   "state"
@@ -139,10 +139,10 @@ ActiveRecord::Schema.define(version: 20160117060852) do
   create_table "bouquet_storages", force: :cascade do |t|
     t.string   "state"
     t.date     "date"
-    t.integer  "quantity"
+    t.integer  "initial_quantity"
     t.integer  "stock_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
     t.index ["stock_id"], name: "index_bouquet_storages_on_stock_id"
   end
 
