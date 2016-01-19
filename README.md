@@ -9,5 +9,11 @@ $ bundle
 $ rake railties:install:migrations
 $ rake db:migrate
 $ rake db:seed
-$ rails server
+$ bundle exec rails server
+```
+
+## Background processing
+
+```
+$ bundle exec sidekiq
 ```

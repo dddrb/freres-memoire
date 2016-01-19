@@ -48,3 +48,6 @@ gem 'draw_uml'
 gem 'bouquet-core', path: '../bouquet/core'
 gem 'bouquet-gate', path: '../bouquet/gate'
 gem 'bouquet-store', path: '../bouquet/store'
+
+gem 'sidekiq'
+gem 'sinatra', github: 'sinatra/sinatra', tag: '2.2.0-alpha', require: false

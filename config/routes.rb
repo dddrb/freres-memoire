@@ -1,6 +1,10 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
-  mount Bouquet::Gate::Engine => "/api"
-  mount Bouquet::Store::Engine => "/store"
+  mount Sidekiq::Web => '/sidekiq'
+
+  mount Bouquet::Gate::Engine => '/api'
+  mount Bouquet::Store::Engine => '/store'
 
   mount DrawUml::Engine, at: '/rails/draw/uml'
 
