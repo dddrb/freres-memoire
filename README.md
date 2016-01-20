@@ -17,3 +17,7 @@ $ bundle exec rails server
 ```
 $ bundle exec sidekiq
 ```
+
+## License
+
+* MIT

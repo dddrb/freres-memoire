@@ -44,10 +44,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'draw_uml'
 
-#gem 'bouquet', path: '../bouquet'
-gem 'bouquet-core', path: '../bouquet/core'
-gem 'bouquet-gate', path: '../bouquet/gate'
-gem 'bouquet-store', path: '../bouquet/store'
+gem 'bouquet-core', github: 'dddrb/bouquet'
+gem 'bouquet-gate', github: 'dddrb/bouquet'
+gem 'bouquet-store', github: 'dddrb/bouquet'
 
 gem 'sidekiq'
 gem 'sinatra', github: 'sinatra/sinatra', tag: '2.2.0-alpha', require: false
+
+gem 'rails_admin', github: 'sferik/rails_admin'
+gem 'rack-pjax', github: 'afcapel/rack-pjax'
+gem 'remotipart', github: 'mshibuya/remotipart'
