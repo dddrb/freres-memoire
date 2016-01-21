@@ -23,9 +23,10 @@ $ bundle exec sidekiq
 
 ## Requirements
 
-* [Ruby](https://www.ruby-lang.org/)
-* [SQLite](https://www.sqlite.org/cli.html)
-* [Redis](http://redis.io/)
+* [Ruby](https://www.ruby-lang.org/) : v2.3.0
+* [Rails](http://rubyonrails.org/) : v5.0.0.beta1
+* [SQLite](https://www.sqlite.org/cli.html) : v3.7.13
+* [Redis](http://redis.io/) : v3.0.6
 
 ## Usage
 
